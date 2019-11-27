@@ -26,7 +26,7 @@ export class Tab4Page implements OnInit {
 
             this.restaurantesService.postRestaurante(this.restaurante).subscribe(
                 data => {
-                    console.log(data.data, 'test');
+                    console.log(data.data, 'test1');
                 }
             );
         }
