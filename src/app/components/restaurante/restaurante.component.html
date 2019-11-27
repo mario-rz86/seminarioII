@@ -1,0 +1,24 @@
+<ion-card color="dark">
+    <ion-card-header>
+        <ion-card-subtitle>
+            <span class="text-primary">{{nro + 1}}. </span>
+            <span class="restaurante-direccion">{{restaurante.direccion}}</span>
+
+            <div class="restaurante-more">
+                <ion-button fill="clear" (click)="lanzarMenu()">
+                    <ion-icon slot="icon-only" name="more">
+
+                    </ion-icon>
+                </ion-button>
+            </div>
+
+        </ion-card-subtitle>
+        <ion-card-title (click)="abrirRestaurante()" s>{{restaurante.nombre}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-img (click)="abrirRestaurante()" *ngIf="restaurante.imagen" [src]="restaurante.imagen"></ion-img>
+
+    <ion-card-content>
+        <p>{{restaurante.descripcion}}</p>
+    </ion-card-content>
+</ion-card>

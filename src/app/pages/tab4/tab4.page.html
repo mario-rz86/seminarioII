@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-title>
+            Restaurantes
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <form  #form="ngForm" (ngSubmit)="addRestaurante()">
+        <ion-grid>
+    <div class="ion-padding">
+        <ion-item *ngIf="restaurante.id>0">
+            <ion-input name="id" type="text" placeholder="Id" [(ngModel)]="restaurante.id" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input  name="nombre" type="text" placeholder="nombre" [(ngModel)]="restaurante.nombre" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input name="direccion" type="text" placeholder="direccion" [(ngModel)]="restaurante.direccion" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input name="descripcion" type="text" placeholder="descripcion" [(ngModel)]="restaurante.descripcion" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input name="imagen" type="text" placeholder="imagen" [(ngModel)]="restaurante.imagen" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input name="precio" type="text" placeholder="precio" [(ngModel)]="restaurante.precio" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input name="categoria" type="text" placeholder="categoria" [(ngModel)]="restaurante.categoria" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input name="url" type="text" placeholder="url" [(ngModel)]="restaurante.url" required></ion-input>
+        </ion-item>
+    </div>
+    <div class="ion-padding">
+        <ion-button *ngIf="restaurante"  size="large" type="submit" [disabled]="form.invalid" expand="block">Agregar</ion-button>
+
+    </div>
+    </ion-grid>
+    </form>
+</ion-content>

@@ -1,0 +1,30 @@
+{
+  "estado": 0,
+  "messaje": "",
+  "data": [
+    {
+      "id": 1,
+      "nombre": "Bodegon"
+    },
+    {
+      "id": 2,
+      "nombre": "Restaurante"
+    },
+    {
+      "id": 3,
+      "nombre": "Comida Rapida"
+    },
+    {
+      "id": 4,
+      "nombre": "Arabe"
+    },
+    {
+      "id": 5,
+      "nombre": "Italiana"
+    },
+    {
+      "id": 5,
+      "nombre": "India"
+    }
+  ]
+}
